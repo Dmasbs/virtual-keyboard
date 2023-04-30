@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.active:hover {
+   background-color:#DCA4B9;
+}
+
+.active:active {
+   background-color:#db427a;
+   border-radius: 100px;
+   border: #db427a;
+}
+
+.first-line {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title {
+    text-shadow:0px 1px 0 rgb(220,164,185),0px -2px 0 rgb(220,164,185),2px 0px 0 rgb(220,164,185),-2px 0px 0 rgb(220,164,185),1px 1px 0 rgb(220,164,185),1px -1px 0 rgb(220,164,185),-1px 1px 0 rgb(220,164,185),-1px -1px 0 rgb(220,164,185),2px 2px 1px rgba(0,0,0,1);
+    font-size:36px;
+    color:rgb(255, 255, 255);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.textarea {
+   display: block;
+   margin: 10px auto;
+   padding: 10px;
+   width: 880px;
+   height: 232px;
+}
+
+div {
+    position: relative;
+    height: 284px;
+    width: 910px;
+    background: #DCA4B9;
+    text-align: center;
+    display: inline-block;
+    border-radius: 19px 19px 10px 10px;
+    padding: 5px 0px 5px 0px;
+    box-shadow: 1px 2px 8px -1px #0404047a;
+}
+
+.fst1 {
+    height: 34px;
+    width: 51.5px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.fst {
+    height: 34px;
+    width: 61px;
+    border-radius: 27px 10px 10px 10px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.lastbutton {
+    height: 34px;
+    width: 51px;
+    border-radius: 10px 27px 10px 10px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.key {
+    height: 50px;
+    width: 54px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.key1 {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.back {
+    height: 50px;
+    width: 188px;
+    border-radius: 10px;
+    margin-top: 6px;
+    /* box-shadow: 4px 5px; */
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.tab {
+    height: 50px;
+    width: 81px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.delete,
+.key2 {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin-top: 6px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.keystick {
+    height: 50px;
+    width: 107px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.caps {
+    height: 50px;
+    width: 104px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.key3 {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.enter {
+    height: 50px;
+    width: 190px;
+    border-radius: 10px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.shift {
+    height: 50px;
+    width: 174px;
+    border-radius: 10px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.shift2 {
+    height: 50px;
+    width: 173px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.key4 {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.last {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.fn {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.window {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.alt {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.space {
+    height: 50px;
+    width: 408px;
+    border-radius: 10px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.last2 {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.alt2 {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.left {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin-top: 5px;
+    position: relative;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.right {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin-left: 54px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.top {
+    height: 22px;
+    width: 50px;
+    border-radius: 20px;
+    align-content: center;
+    position: absolute;
+    bottom: 39px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.bottom {
+    height: 22px;
+    width: 50px;
+    border-radius: 10px;
+    margin-top: 5px;
+    position: absolute;
+
+    bottom: 12px;
+    box-shadow: 0px 0px 6px 2px #0e225a45;
+}
