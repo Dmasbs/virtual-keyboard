@@ -2,6 +2,7 @@ const ARR_RU = [
   [
     {
       code: 'Backquote',
+      print: 1,
       ru: {
         default: 'ё',
         shift: 'Ё',
@@ -10,6 +11,7 @@ const ARR_RU = [
     },
     {
       code: 'Digit1',
+      print: 1,
       ru: {
         default: '1',
         shift: '!',
@@ -18,6 +20,7 @@ const ARR_RU = [
     },
     {
       code: 'Digit2',
+      print: 1,
       ru: {
         default: '2',
         shift: '"',
@@ -26,6 +29,7 @@ const ARR_RU = [
     },
     {
       code: 'Digit3',
+      print: 1,
       ru: {
         default: '3',
         shift: '№',
@@ -34,6 +38,7 @@ const ARR_RU = [
     },
     {
       code: 'Digit4',
+      print: 1,
       ru: {
         default: '4',
         shift: ';',
@@ -42,6 +47,7 @@ const ARR_RU = [
     },
     {
       code: 'Digit5',
+      print: 1,
       ru: {
         default: '5',
         shift: '%',
@@ -50,6 +56,7 @@ const ARR_RU = [
     },
     {
       code: 'Digit6',
+      print: 1,
       ru: {
         default: '6',
         shift: ':',
@@ -58,6 +65,7 @@ const ARR_RU = [
     },
     {
       code: 'Digit7',
+      print: 1,
       ru: {
         default: '7',
         shift: '?',
@@ -66,6 +74,7 @@ const ARR_RU = [
     },
     {
       code: 'Digit8',
+      print: 1,
       ru: {
         default: '8',
         shift: '*',
@@ -74,6 +83,7 @@ const ARR_RU = [
     },
     {
       code: 'Digit9',
+      print: 1,
       ru: {
         default: '9',
         shift: '(',
@@ -82,6 +92,7 @@ const ARR_RU = [
     },
     {
       code: 'Digit0',
+      print: 1,
       ru: {
         default: '0',
         shift: ')',
@@ -90,6 +101,7 @@ const ARR_RU = [
     },
     {
       code: 'Minus',
+      print: 1,
       ru: {
         default: '-',
         shift: '_',
@@ -98,6 +110,7 @@ const ARR_RU = [
     },
     {
       code: 'Equal',
+      print: 1,
       ru: {
         default: '=',
         shift: '+',
@@ -106,6 +119,7 @@ const ARR_RU = [
     },
     {
       code: 'Backspace',
+      print: 0,
       ru: {
         default: 'backspace',
         shift: 'backspace',
@@ -116,6 +130,7 @@ const ARR_RU = [
   [
     {
       code: 'Tab',
+      print: 0,
       ru: {
         default: 'tab',
         shift: 'tab',
@@ -124,6 +139,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyQ',
+      print: 1,
       ru: {
         default: 'й',
         shift: 'Й',
@@ -132,6 +148,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyW',
+      print: 1,
       ru: {
         default: 'ц',
         shift: 'Ц',
@@ -140,6 +157,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyE',
+      print: 1,
       ru: {
         default: 'у',
         shift: 'У',
@@ -148,6 +166,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyR',
+      print: 1,
       ru: {
         default: 'к',
         shift: 'К',
@@ -156,6 +175,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyT',
+      print: 1,
       ru: {
         default: 'е',
         shift: 'Е',
@@ -164,6 +184,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyY',
+      print: 1,
       ru: {
         default: 'н',
         shift: 'Н',
@@ -172,6 +193,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyU',
+      print: 1,
       ru: {
         default: 'г',
         shift: 'Г',
@@ -180,6 +202,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyI',
+      print: 1,
       ru: {
         default: 'ш',
         shift: 'Ш',
@@ -188,6 +211,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyO',
+      print: 1,
       ru: {
         default: 'щ',
         shift: 'Щ',
@@ -196,6 +220,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyP',
+      print: 1,
       ru: {
         default: 'з',
         shift: 'З',
@@ -204,6 +229,7 @@ const ARR_RU = [
     },
     {
       code: 'BracketLeft',
+      print: 1,
       ru: {
         default: 'х',
         shift: 'Х',
@@ -212,6 +238,7 @@ const ARR_RU = [
     },
     {
       code: 'BracketRight',
+      print: 1,
       ru: {
         default: 'ъ',
         shift: 'Ъ',
@@ -220,6 +247,7 @@ const ARR_RU = [
     },
     {
       code: 'Backslash',
+      print: 1,
       ru: {
         default: '\\',
         shift: '/',
@@ -228,6 +256,7 @@ const ARR_RU = [
     },
     {
       code: 'Delete',
+      print: 0,
       ru: {
         default: 'delete',
         shift: 'delete',
@@ -238,6 +267,7 @@ const ARR_RU = [
   [
     {
       code: 'CapsLock',
+      print: 0,
       ru: {
         default: 'caps lock',
         shift: 'caps lock',
@@ -246,6 +276,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyA',
+      print: 1,
       ru: {
         default: 'ф',
         shift: 'Ф',
@@ -254,6 +285,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyS',
+      print: 1,
       ru: {
         default: 'ы',
         shift: 'Ы',
@@ -262,6 +294,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyD',
+      print: 1,
       ru: {
         default: 'в',
         shift: 'В',
@@ -270,6 +303,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyF',
+      print: 1,
       ru: {
         default: 'а',
         shift: 'А',
@@ -278,6 +312,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyG',
+      print: 1,
       ru: {
         default: 'п',
         shift: 'П',
@@ -286,6 +321,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyH',
+      print: 1,
       ru: {
         default: 'р',
         shift: 'Р',
@@ -294,6 +330,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyJ',
+      print: 1,
       ru: {
         default: 'о',
         shift: 'О',
@@ -302,6 +339,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyK',
+      print: 1,
       ru: {
         default: 'л',
         shift: 'Л',
@@ -310,6 +348,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyL',
+      print: 1,
       ru: {
         default: 'д',
         shift: 'Д',
@@ -318,6 +357,7 @@ const ARR_RU = [
     },
     {
       code: 'Semicolon',
+      print: 1,
       ru: {
         default: 'ж',
         shift: 'Ж',
@@ -326,6 +366,7 @@ const ARR_RU = [
     },
     {
       code: 'Quote',
+      print: 1,
       ru: {
         default: 'э',
         shift: 'Э',
@@ -334,6 +375,7 @@ const ARR_RU = [
     },
     {
       code: 'Enter',
+      print: 0,
       ru: {
         default: 'enter',
         shift: 'enter',
@@ -344,6 +386,7 @@ const ARR_RU = [
   [
     {
       code: 'ShiftLeft',
+      print: 0,
       ru: {
         default: 'shift',
         shift: 'shift',
@@ -352,6 +395,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyZ',
+      print: 1,
       ru: {
         default: 'я',
         shift: 'Я',
@@ -360,6 +404,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyX',
+      print: 1,
       ru: {
         default: 'ч',
         shift: 'Ч',
@@ -368,6 +413,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyC',
+      print: 1,
       ru: {
         default: 'с',
         shift: 'С',
@@ -376,6 +422,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyV',
+      print: 1,
       ru: {
         default: 'м',
         shift: 'М',
@@ -384,6 +431,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyB',
+      print: 1,
       ru: {
         default: 'і',
         shift: 'І',
@@ -392,6 +440,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyN',
+      print: 1,
       ru: {
         default: 'т',
         shift: 'Т',
@@ -400,6 +449,7 @@ const ARR_RU = [
     },
     {
       code: 'KeyM',
+      print: 1,
       ru: {
         default: 'ь',
         shift: 'Ь',
@@ -408,6 +458,7 @@ const ARR_RU = [
     },
     {
       code: 'Comma',
+      print: 1,
       ru: {
         default: 'б',
         shift: 'Б',
@@ -416,6 +467,7 @@ const ARR_RU = [
     },
     {
       code: 'Period',
+      print: 1,
       ru: {
         default: 'ю',
         shift: 'Ю',
@@ -424,6 +476,7 @@ const ARR_RU = [
     },
     {
       code: 'Slash',
+      print: 1,
       ru: {
         default: '.',
         shift: ',',
@@ -432,6 +485,7 @@ const ARR_RU = [
     },
     {
       code: 'ShiftRight',
+      print: 0,
       ru: {
         default: 'shift',
         shift: 'shift',
@@ -442,6 +496,7 @@ const ARR_RU = [
   [
     {
       code: 'ControlLeft',
+      print: 0,
       ru: {
         default: 'ctrl',
         shift: 'ctrl',
@@ -450,6 +505,7 @@ const ARR_RU = [
     },
     {
       code: 'Window',
+      print: 0,
       ru: {
         default: 'window',
         shift: 'window',
@@ -458,6 +514,7 @@ const ARR_RU = [
     },
     {
       code: 'AltLeft',
+      print: 0,
       ru: {
         default: 'alt',
         shift: 'alt',
@@ -466,6 +523,7 @@ const ARR_RU = [
     },
     {
       code: 'Space',
+      print: 0,
       ru: {
         default: 'space',
         shift: 'space',
@@ -474,6 +532,7 @@ const ARR_RU = [
     },
     {
       code: 'AltRight',
+      print: 0,
       ru: {
         default: 'alt',
         shift: 'alt',
@@ -482,6 +541,7 @@ const ARR_RU = [
     },
     {
       code: 'ControlRight',
+      print: 0,
       ru: {
         default: 'ctrl',
         shift: 'ctrl',
@@ -490,6 +550,7 @@ const ARR_RU = [
     },
     {
       code: 'ArrowLeft',
+      print: 1,
       ru: {
         default: '←',
         shift: '←',
@@ -498,6 +559,7 @@ const ARR_RU = [
     },
     {
       code: 'ArrowUp',
+      print: 1,
       ru: {
         default: '↑',
         shift: '↑',
@@ -506,6 +568,7 @@ const ARR_RU = [
     },
     {
       code: 'ArrowDown',
+      print: 1,
       ru: {
         default: '↓',
         shift: '↓',
@@ -514,6 +577,7 @@ const ARR_RU = [
     },
     {
       code: 'ArrowRight',
+      print: 1,
       ru: {
         default: '→',
         shift: '→',
@@ -531,8 +595,11 @@ const createKeyRow = (arr) => {
     for (let j = 0; j < arr[i].length; j += 1) {
       const button = document.createElement('button')
       const nameKey = arr[i][j].code
+      const isPrint = arr[i][j].print
       button.className = `key-bord-btn ${nameKey}`.toLowerCase()
       button.textContent = `${arr[i][j].ru.default}`
+      button.dataset.print = +isPrint
+
       row.append(button)
     }
   }
@@ -561,33 +628,41 @@ createElement()
 const textarea = document.querySelector('textarea')
 let textareaSelection = 0
 
+const typeKeys = (event, mouseActive = false) => {
+  textarea.focus()
+  const key = !mouseActive ? document.querySelector(`.${event.code.toLowerCase()}`) : event.target.closest('.key-bord-btn')
+  if (key) {
+    key.classList.add('active')
+    if (+key.dataset.print) {
+      const keyValue = key.textContent
+      textareaSelection = textarea.selectionStart
+      textarea.value = `${textarea.value.slice(0, textareaSelection)}${keyValue}${textarea.value.slice(textareaSelection)}`
+      textareaSelection += 1
+      textarea.setSelectionRange(textareaSelection, textareaSelection)
+    }
+  }
+}
+
+const removeKeys = (event, mouseActive = false) => {
+  const key = !mouseActive ? document.querySelector(`.${event.code.toLowerCase()}`) : event.target.closest('.key-bord-btn')
+  key?.classList.remove('active')
+}
+
 // нажатие кнопок
 document.addEventListener('keydown', (event) => {
-  const key = document.querySelector(`.${event.code.toLowerCase()}`)
-  key.classList.add('active')
+  event.preventDefault()
+  typeKeys(event)
 })
 
 document.addEventListener('keyup', (event) => {
-  const key = document.querySelector(`.${event.code.toLowerCase()}`)
-  key.classList.remove('active')
+  event.preventDefault()
+  removeKeys(event)
 })
 
 document.addEventListener('mousedown', (event) => {
-  if (event.target.classList.contains('key-bord-btn')) {
-    event.target.classList.add('active')
-    textareaSelection = textarea.selectionStart
-    textarea.value = `${textarea.value.slice(0, textareaSelection)}${event.target.innerHTML}${textarea.value.slice(textareaSelection)}`
-    textareaSelection += 1
-    textarea.setSelectionRange(textareaSelection, textareaSelection)
-    textarea.focus()
-  }
+  typeKeys(event, true)
 })
 
 document.addEventListener('mouseup', (event) => {
-  if (event.target.classList.contains('key-bord-btn')) {
-    event.target.classList.remove('active')
-  }
-  textareaSelection = textarea.selectionStart
-  textarea.setSelectionRange(textareaSelection, textareaSelection)
-  textarea.focus()
+  removeKeys(event, true)
 })
