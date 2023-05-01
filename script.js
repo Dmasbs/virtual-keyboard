@@ -524,8 +524,9 @@ const ARR_RU = [
 ]
 
 const createElement = (arr) => {
-  const body = document.body
+  const body = document.querySelector('body')
   body.classList.add('first-line')
+
   const TITLE = document.createElement('h1')
   TITLE.classList.add('title')
   TITLE.textContent = 'RSS Виртуальная клавиатура'
