@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+button {
+   border-color: transparent;
+}
+
 .active:hover {
    background-color:#DCA4B9;
 }
@@ -34,10 +38,10 @@
    height: 232px;
 }
 
-div {
+.div_block {
     position: relative;
     height: 284px;
-    width: 910px;
+    width: 896px;
     background: #DCA4B9;
     text-align: center;
     display: inline-block;
@@ -46,45 +50,39 @@ div {
     box-shadow: 1px 2px 8px -1px #0404047a;
 }
 
-.fst1 {
-    height: 34px;
-    width: 51.5px;
-    border-radius: 10px;
-    margin-bottom: 12px;
-    box-shadow: 0px 0px 6px 2px #0e225a45;
+.key-bord-btn:not(:last-child) {
+   margin-right: 5px;
 }
 
-.fst {
-    height: 34px;
-    width: 61px;
-    border-radius: 27px 10px 10px 10px;
-    box-shadow: 0px 0px 6px 2px #0e225a45;
-}
-
-.lastbutton {
-    height: 34px;
-    width: 51px;
-    border-radius: 10px 27px 10px 10px;
-    box-shadow: 0px 0px 6px 2px #0e225a45;
-}
-
-.key {
+.backquote {
     height: 50px;
     width: 54px;
     border-radius: 10px;
     box-shadow: 0px 0px 6px 2px #0e225a45;
 }
 
-.key1 {
+.digit1,
+.digit2,
+.digit3,
+.digit4,
+.digit5,
+.digit6,
+.digit7,
+.digit8,
+.digit9,
+.digit0,
+.minus,
+.equal
+{
     height: 50px;
     width: 50px;
     border-radius: 10px;
     box-shadow: 0px 0px 6px 2px #0e225a45;
 }
 
-.back {
+.backspace {
     height: 50px;
-    width: 188px;
+    width: 160px;
     border-radius: 10px;
     margin-top: 6px;
     /* box-shadow: 4px 5px; */
@@ -99,7 +97,18 @@ div {
 }
 
 .delete,
-.key2 {
+.keyq,
+.keyw,
+.keye,
+.keyr,
+.keyt,
+.keyy,
+.keyu,
+.keyi,
+.keyo,
+.keyp,
+.bracketleft,
+.bracketright {
     height: 50px;
     width: 50px;
     border-radius: 10px;
@@ -107,21 +116,31 @@ div {
     box-shadow: 0px 0px 6px 2px #0e225a45;
 }
 
-.keystick {
+.backslash {
     height: 50px;
-    width: 107px;
+    width: 79px;
     border-radius: 10px;
     box-shadow: 0px 0px 6px 2px #0e225a45;
 }
 
-.caps {
+.capslock {
     height: 50px;
     width: 104px;
     border-radius: 10px;
     box-shadow: 0px 0px 6px 2px #0e225a45;
 }
 
-.key3 {
+.keya,
+.keys,
+.keyd,
+.keyf,
+.keyg,
+.keyh,
+.keyj,
+.keyk,
+.keyl,
+.semicolon,
+.quote {
     height: 50px;
     width: 50px;
     border-radius: 10px;
@@ -130,28 +149,37 @@ div {
 
 .enter {
     height: 50px;
-    width: 190px;
+    width: 163px;
     border-radius: 10px;
     margin-top: 5px;
     box-shadow: 0px 0px 6px 2px #0e225a45;
 }
 
-.shift {
+.shiftleft {
     height: 50px;
-    width: 174px;
+    width: 145px;
     border-radius: 10px;
     margin-top: 5px;
     box-shadow: 0px 0px 6px 2px #0e225a45;
 }
 
-.shift2 {
+.shiftright {
     height: 50px;
-    width: 173px;
+    width: 178px;
     border-radius: 10px;
     box-shadow: 0px 0px 6px 2px #0e225a45;
 }
 
-.key4 {
+.keyz,
+.keyx,
+.keyc,
+.keyv,
+.keyb,
+.keyn,
+.keym,
+.comma,
+.period,
+.slash {
     height: 50px;
     width: 50px;
     border-radius: 10px;
@@ -159,7 +187,7 @@ div {
     box-shadow: 0px 0px 6px 2px #0e225a45;
 }
 
-.last {
+.controlleft {
     height: 50px;
     width: 50px;
     border-radius: 10px;
@@ -183,7 +211,7 @@ div {
     box-shadow: 0px 0px 6px 2px #0e225a45;
 }
 
-.alt {
+.altleft {
     height: 50px;
     width: 50px;
     border-radius: 10px;
@@ -193,13 +221,13 @@ div {
 
 .space {
     height: 50px;
-    width: 408px;
+    width: 437px;
     border-radius: 10px;
     margin-top: 5px;
     box-shadow: 0px 0px 6px 2px #0e225a45;
 }
 
-.last2 {
+.controlright {
     height: 50px;
     width: 50px;
     border-radius: 10px;
@@ -207,7 +235,7 @@ div {
     box-shadow: 0px 0px 6px 2px #0e225a45;
 }
 
-.alt2 {
+.altright {
     height: 50px;
     width: 50px;
     border-radius: 10px;
@@ -215,7 +243,7 @@ div {
     box-shadow: 0px 0px 6px 2px #0e225a45;
 }
 
-.left {
+.arrowleft {
     height: 50px;
     width: 50px;
     border-radius: 10px;
@@ -224,7 +252,7 @@ div {
     box-shadow: 0px 0px 6px 2px #0e225a45;
 }
 
-.right {
+.arrowright {
     height: 50px;
     width: 50px;
     border-radius: 10px;
@@ -232,7 +260,7 @@ div {
     box-shadow: 0px 0px 6px 2px #0e225a45;
 }
 
-.top {
+.arrowup {
     height: 22px;
     width: 50px;
     border-radius: 20px;
@@ -242,7 +270,7 @@ div {
     box-shadow: 0px 0px 6px 2px #0e225a45;
 }
 
-.bottom {
+.arrowdown {
     height: 22px;
     width: 50px;
     border-radius: 10px;

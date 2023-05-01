@@ -107,9 +107,9 @@ const ARR_RU = [
     {
       code: 'Backspace',
       ru: {
-        default: 'delete',
-        shift: 'delete',
-        caps: 'delete',
+        default: 'backspace',
+        shift: 'backspace',
+        caps: 'backspace',
       },
     },
   ],
@@ -213,9 +213,9 @@ const ARR_RU = [
     {
       code: 'BracketRight',
       ru: {
-        default: 'ї',
-        shift: 'Ї',
-        caps: 'Ї',
+        default: 'ъ',
+        shift: 'Ъ',
+        caps: 'Ъ',
       },
     },
     {
@@ -229,9 +229,9 @@ const ARR_RU = [
     {
       code: 'Delete',
       ru: {
-        default: 'Delete',
-        shift: 'Delete',
-        caps: 'Delete',
+        default: 'delete',
+        shift: 'delete',
+        caps: 'delete',
       },
     },
   ],
@@ -327,17 +327,17 @@ const ARR_RU = [
     {
       code: 'Quote',
       ru: {
-        default: 'є',
-        shift: 'Є',
-        caps: 'Є',
+        default: 'э',
+        shift: 'Э',
+        caps: 'Э',
       },
     },
     {
       code: 'Enter',
       ru: {
-        default: 'return',
-        shift: 'return',
-        caps: 'return',
+        default: 'enter',
+        shift: 'enter',
+        caps: 'enter',
       },
     },
   ],
@@ -443,49 +443,49 @@ const ARR_RU = [
     {
       code: 'ControlLeft',
       ru: {
-        default: 'control',
-        shift: 'control',
-        caps: 'control',
+        default: 'ctrl',
+        shift: 'ctrl',
+        caps: 'ctrl',
       },
     },
     {
       code: 'Window',
       ru: {
-        default: 'Window',
-        shift: 'Window',
-        caps: 'Window',
+        default: 'window',
+        shift: 'window',
+        caps: 'window',
       },
     },
     {
       code: 'AltLeft',
       ru: {
-        default: 'option',
-        shift: 'option',
-        caps: 'option',
+        default: 'alt',
+        shift: 'alt',
+        caps: 'alt',
       },
     },
     {
       code: 'Space',
       ru: {
-        default: ' ',
-        shift: ' ',
-        caps: ' ',
+        default: 'space',
+        shift: 'space',
+        caps: 'space',
       },
     },
     {
       code: 'AltRight',
       ru: {
-        default: 'option',
-        shift: 'option',
-        caps: 'option',
+        default: 'alt',
+        shift: 'alt',
+        caps: 'alt',
       },
     },
     {
       code: 'ControlRight',
       ru: {
-        default: 'control',
-        shift: 'control',
-        caps: 'control',
+        default: 'ctrl',
+        shift: 'ctrl',
+        caps: 'ctrl',
       },
     },
     {
@@ -522,11 +522,26 @@ const ARR_RU = [
     },
   ],
 ]
+const createKeyRow = (arr) => {
+  const block = document.createElement('div')
+  for (let i = 0; i < arr.length; i += 1) {
+    const row = document.createElement('div')
+    block.append(row)
 
-const createElement = (arr) => {
+    for (let j = 0; j < arr[i].length; j += 1) {
+      const button = document.createElement('button')
+      const nameKey = arr[i][j].code
+      button.className = `key-bord-btn ${nameKey}`.toLowerCase()
+      button.textContent = `${arr[i][j].ru.default}`
+      row.append(button)
+    }
+  }
+  return block
+}
+
+const createElement = () => {
   const body = document.querySelector('body')
   body.classList.add('first-line')
-
   const TITLE = document.createElement('h1')
   TITLE.classList.add('title')
   TITLE.textContent = 'RSS Виртуальная клавиатура'
@@ -536,7 +551,9 @@ const createElement = (arr) => {
   TEXTAREA.classList.add('textarea')
   body.append(TEXTAREA)
 
-  const DIV = document.createElement('div')
-  body.append(DIV)
+  const DIV_BLOCK = createKeyRow(ARR_RU)
+  DIV_BLOCK.classList.add('div_block')
+  body.append(DIV_BLOCK)
 }
-createElement(ARR_RU)
+
+createElement()
