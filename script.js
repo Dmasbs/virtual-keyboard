@@ -629,17 +629,24 @@ const textarea = document.querySelector('textarea')
 let textareaSelection = 0
 
 const typeKeys = (event, mouseActive = false) => {
-  textarea.focus()
   const key = !mouseActive ? document.querySelector(`.${event.code.toLowerCase()}`) : event.target.closest('.key-bord-btn')
   if (key) {
+    let keyValue = ''
     key.classList.add('active')
     if (+key.dataset.print) {
-      const keyValue = key.textContent
-      textareaSelection = textarea.selectionStart
-      textarea.value = `${textarea.value.slice(0, textareaSelection)}${keyValue}${textarea.value.slice(textareaSelection)}`
-      textareaSelection += 1
-      textarea.setSelectionRange(textareaSelection, textareaSelection)
+      keyValue = key.textContent
+    } else if (key.classList.contains('enter')) {
+      keyValue = '\n'
+    } else if (key.classList.contains('tab')) {
+      keyValue = '\t'
+    } else if (key.classList.contains('space')) {
+      keyValue = ' '
     }
+    textareaSelection = textarea.selectionStart
+    textarea.value = `${textarea.value.slice(0, textareaSelection)}${keyValue}${textarea.value.slice(textareaSelection)}`
+    textareaSelection += 1
+    textarea.setSelectionRange(textareaSelection, textareaSelection)
+    textarea.focus()
   }
 }
 
@@ -665,4 +672,7 @@ document.addEventListener('mousedown', (event) => {
 
 document.addEventListener('mouseup', (event) => {
   removeKeys(event, true)
+  textareaSelection = textarea.selectionStart
+  textarea.setSelectionRange(textareaSelection, textareaSelection)
+  textarea.focus()
 })
