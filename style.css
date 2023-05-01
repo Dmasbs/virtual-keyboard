@@ -25,9 +25,11 @@ button {
 .textarea {
    display: block;
    margin: 10px auto;
-   padding: 10px;
-   width: 880px;
+   padding: 20px;
+   width: 835px;
    height: 232px;
+   border-radius: 35px;
+   border: 3px solid rgb(220,164,185);
 }
 
 .div_block {
