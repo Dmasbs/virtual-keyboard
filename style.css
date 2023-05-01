@@ -5,16 +5,8 @@
 
 button {
    border-color: transparent;
-}
-
-.active:hover {
-   background-color:#DCA4B9;
-}
-
-.active:active {
-   background-color:#db427a;
-   border-radius: 100px;
-   border: #db427a;
+   transition: border-radius 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+   background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .first-line {
@@ -279,4 +271,11 @@ button {
 
     bottom: 12px;
     box-shadow: 0px 0px 6px 2px #0e225a45;
+}
+
+.active {
+   background-color:#f0f0f0dd;
+   border-radius: 100px;
+   box-shadow: inset 5px 5px 10px #d3d3d3,
+            inset -5px -5px 10px #ededed;
 }

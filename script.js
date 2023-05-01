@@ -557,3 +557,37 @@ const createElement = () => {
 }
 
 createElement()
+
+const textarea = document.querySelector('textarea')
+let textareaSelection = 0
+
+// нажатие кнопок
+document.addEventListener('keydown', (event) => {
+  const key = document.querySelector(`.${event.code.toLowerCase()}`)
+  key.classList.add('active')
+})
+
+document.addEventListener('keyup', (event) => {
+  const key = document.querySelector(`.${event.code.toLowerCase()}`)
+  key.classList.remove('active')
+})
+
+document.addEventListener('mousedown', (event) => {
+  if (event.target.classList.contains('key-bord-btn')) {
+    event.target.classList.add('active')
+    textareaSelection = textarea.selectionStart
+    textarea.value = `${textarea.value.slice(0, textareaSelection)}${event.target.innerHTML}${textarea.value.slice(textareaSelection)}`
+    textareaSelection += 1
+    textarea.setSelectionRange(textareaSelection, textareaSelection)
+    textarea.focus()
+  }
+})
+
+document.addEventListener('mouseup', (event) => {
+  if (event.target.classList.contains('key-bord-btn')) {
+    event.target.classList.remove('active')
+  }
+  textareaSelection = textarea.selectionStart
+  textarea.setSelectionRange(textareaSelection, textareaSelection)
+  textarea.focus()
+})
